@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+
+<head>
+    <title>IIPM</title>
+    <link rel="stylesheet" href="../../style.css">
+    <script src="../../sketch.js"></script>
+</head>
+
+<body style="font-family:calibri; text-align: center;" onload="time('time')">
+
+    <h2>Segundo Protótipo Funcional - Completo</h2>
+
+    <div id="screen" class="screenSize">
+        <div id="contactInfo" class="screenSize">
+           <a href="../mainmenu.html">                <input type="button" onclick="location.href='func_prot.html';" class="menu_button" />
+            </a>
+            <div class="mainMenuTime" style="background-color: rgb(167, 28, 28);">
+                <table class="headerTable">
+                    <td width="33%" id="tableTime">
+                        <span id="time"></span>
+                    </td>
+                    <td width="33%" id="tableName">
+                        Sbsr
+                    </td>
+                    <td width="33%" id="tableBattery">
+                        <img id="battery" src="../../context/Battery.png" width=27%></img>
+                        <img id="signal" src="../../context/Signal.png" width=27%></img>
+                    </td>
+                </table>
+            </div>
+            <div class="contactinfo">
+                <table class="eventos">
+                    <tr>
+                      <p><font size="4">18-20 / 10 / 2019</font></p>
+
+                    </tr>
+                    <tr>
+                      <td>
+                        <a onclick="setCookie('callName','Sbsr')" href="mapsbsr.html">
+                            <font size="4">Location: Meco,Sesimbra</font>
+                        </a>
+                        <p></p>
+                        <a href="participantes.html">
+                            <font size="4">Participants</font>
+                            <img  style="vertical-align:middle" id="messageIco" src="../../context/contacts.png" width=10%></img>
+                        </a>
+                        <p></p>
+                        <a onclick="setCookie('callName','Sbsr')" href="call2.html">
+                            <font size="4">Contact</font>
+                            <img style="vertical-align:middle" id="messageIco" src="../../context/call.png" width=10%></img>
+                        </a>
+                        </td>
+                        <td>
+                            <img src="../../context/superbock.jpg" height=60%></img>
+                        </td>
+                        </tr>
+
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <button id="swipe_left" class="back_button" onclick="goBack()">Swipe Left</button>
+
+</body>
+
+</html>
+</html>

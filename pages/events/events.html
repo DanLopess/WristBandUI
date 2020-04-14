@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+
+<head>
+    <title>IIPM</title>
+    <link rel="stylesheet" href="../../style.css">
+    <script src="../../sketch.js"></script>
+</head>
+
+<body style="font-family:calibri; text-align: center;" onload="time('time')" >
+
+    <h2>Segundo Protótipo Funcional - Completo</h2>
+
+    <div id="screen" class="screenSize">
+        <div id="messages" class="screenSize">
+           <a href="../mainmenu.html">                <input type="button" onclick="location.href='func_prot.html';" class="menu_button" />
+            </a>
+            <div class="mainMenuTime" style="background-color: rgb(167, 28, 28);">
+                <table class="headerTable">
+                    <td width="33%" id="tableTime">
+                        <span id="time"></span>
+                    </td>
+                    <td width="33%" id="tableName">
+                        Events
+                    </td>
+                    <td width="33%" id="tableBattery">
+                        <img id="battery" src="../../context/Battery.png" width=27%></img>
+                        <img id="signal" src="../../context/Signal.png" width=27%></img>
+                    </td>
+                </table>
+            </div>
+
+            <div class="events" style="overflow-y:scroll;">
+                <table class="eventsT">
+                    <tr>
+                        <td>
+							&nbsp &nbsp &nbsp
+                            <a href="paredesdecoura.html">
+                              <img style="vertical-align:middle" id="contact-photo" src="../../context/paredes.jpg" width=60px height=60px></img>
+                            </a>
+							<a onclick="setCookie('callName','Paredes')" href="paredesdecoura.html">
+								&nbsp  Paredes
+							</a>
+                        </td>
+                        <td>
+                            &nbsp &nbsp &nbsp &nbsp 14/08
+                        </td>
+                        <td>
+							&nbsp &nbsp &nbsp &nbsp
+                            <a onclick="setCookie('callName','Paredes')" href="mapparedes.html">
+                                <img id="messageIco" src="../../context/location.png" width=60px height=60px></img>
+                            </a>
+                        </td>
+
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="sbsr.html">
+                                <img style="vertical-align:middle" id="contact-photo" src="../../context/superbock.jpg" width=60px height=60px></img>
+                            </a>
+							<a onclick="setCookie('callName','Sbsr')" href="sbsr.html">
+								&nbsp  Sbsr
+							</a>
+                        </td>
+                        <td>
+                            &nbsp &nbsp &nbsp &nbsp  18/10
+                        </td>
+                        <td>
+							&nbsp  &nbsp &nbsp &nbsp
+                            <a onclick="setCookie('callName','Sbsr')" href="mapsbsr.html">
+                                <img id="messageIco" src="../../context/location.png" width=60px height=60px></img>
+                            </a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+							&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                            <a href="meosudoeste.html">
+                                <img style="vertical-align:middle" id="contact-photo" src="../../context/meosudoeste.jpg" width=60px height=60px></img>
+                            </a>
+							<a onclick="setCookie('callName','MEOSudo')" href="meosudoeste.html">
+								&nbsp  	MEO Sudoe
+							</a>
+                        </td>
+                        <td>
+                            &nbsp &nbsp &nbsp &nbsp  14/12
+                        </td>
+                        <td>
+							&nbsp &nbsp &nbsp &nbsp &nbsp
+                            <a onclick="setCookie('callName','MEOSudo')" href="mapsudoeste.html">
+                                <img id="messageIco" src="../../context/location.png" width=60px height=60px></img>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+							&nbsp &nbsp &nbsp &nbsp &nbsp
+                            <img style="vertical-align:middle" id="contact-photo" src="../../context/Anonymous.jpeg" width=60px height=60px></img>
+								&nbsp NOS Alive
+                        </td>
+                        <td>
+                            &nbsp &nbsp &nbsp &nbsp 15/12
+                        </td>
+                        <td>
+							&nbsp &nbsp &nbsp &nbsp &nbsp
+                            <a href="map.html">
+                                <img id="messageIco" src="../../context/location.png" width=60px height=60px></img>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+							&nbsp &nbsp &nbsp &nbsp &nbsp
+                            <img style="vertical-align:middle" id="contact-photo" src="../../context/Anonymous.jpeg" width=60px height=60px></img>
+							&nbsp  Nicki Minaj
+						</td>
+                        <td>
+                            &nbsp &nbsp &nbsp &nbsp 17/12
+                        </td>
+                        <td>
+							&nbsp &nbsp &nbsp &nbsp &nbsp
+                            <a href="map.html">
+                                <img id="messageIco" src="../../context/location.png" width=60px height=60px></img>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+							&nbsp &nbsp &nbsp &nbsp
+                            <img style="vertical-align:middle" id="contact-photo" src="../../context/Anonymous.jpeg" width=60px height=60px></img>
+							&nbsp Scorpions
+                        </td>
+
+                        <td>
+                            &nbsp &nbsp &nbsp &nbsp18/12
+                        </td>
+                        <td>
+							&nbsp &nbsp &nbsp &nbsp &nbsp
+                            <a href="map.html">
+                                <img id="messageIco" src="../../context/location.png" width=60px height=60px></img>
+                            </a>
+                        </td>
+                    </tr>
+
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+    <button id="swipe_left" class="back_button" onclick="goBack()">Swipe Left</button>
+
+
+</body>
+
+</html>

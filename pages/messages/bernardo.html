@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+
+<head>
+    <title>IIPM</title>
+    <link rel="stylesheet" href="../../style.css">
+    <script src="../../sketch.js"></script>
+</head>
+
+<body style="font-family:calibri; text-align: center;" onload="time('time')">
+
+    <h2>Segundo Protótipo Funcional - Completo</h2>
+
+    <div id="screen" class="screenSize">
+        <div id="contactInfo" class="screenSize">
+           <a href="../mainmenu.html">                <input type="button" onclick="location.href='func_prot.html';" class="menu_button" />
+            </a>
+            <div class="mainMenuTime" style="background-color: rgb(0, 0, 0);">
+                <table class="headerTable">
+                    <td width="33%" id="tableTime">
+                        <span id="time"></span>
+                    </td>
+                    <td width="33%" id="tableName">
+                        Info
+                    </td>
+                    <td width="33%" id="tableBattery">
+                        <img id="battery" src="../../context/Battery.png" width=27%></img>
+                        <img id="signal" src="../../context/Signal.png" width=27%></img>
+                    </td>
+                </table>
+            </div>
+            <div class="contactinfo" style="top: 6%;">
+                <img id="profile" src="../../context/bernardoprofile.png" width="91%"></img>
+                <table>
+                    <tr>
+                        <td>
+                            <a onclick="setCookie('callName','Bernardo')" href="sendmsg.html">
+                                <img id="messageIco" src="../../context/45-Send-512.png" width=10%></img>
+                            </a>
+                        </td>
+                        New Message
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <button id="swipe_left" class="back_button" onclick="goBack()">Swipe Left</button>
+
+</body>
+
+</html>

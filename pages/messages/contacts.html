@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+
+<head>
+    <title>IIPM</title>
+    <link rel="stylesheet" href="../../style.css">
+    <script src="../../sketch.js"></script>
+</head>
+
+<body style="font-family:calibri; text-align: center;" onload="time('time')" >
+
+    <h2>Segundo Protótipo Funcional - Completo</h2>
+
+    <div id="screen" class="screenSize">
+        <div id="messages" class="screenSize">
+           <a href="../mainmenu.html">                <input type="button" onclick="location.href='func_prot.html';" class="menu_button" />
+            </a>
+            <div class="mainMenuTime" style="background-color: rgb(0, 0, 0);">
+                <table class="headerTable">
+                    <td width="33%" id="tableTime">
+                        <span id="time"></span>
+                    </td>
+                    <td width="33%" id="tableName">
+                        Contacts
+                    </td>
+                    <td width="33%" id="tableBattery">
+                        <img id="battery" src="../../context/Battery.png" width=27%></img>
+                        <img id="signal" src="../../context/Signal.png" width=27%></img>
+                    </td>
+                </table>
+            </div>
+
+            <div class="contacts1" style="overflow-y:scroll">
+                <table >
+                    <tr>
+						<td onclick="window.location.href='bernardo.html'">
+							<img style="vertical-align:middle" id="contact-photo" src="../../context/bernardo.jpeg" width=25%></img>
+							&nbsp &nbsp  Bernardo
+						</td>
+						<td>
+                            <a onclick="setCookie('callName','Bernardo')" href="call.html">
+                                <img id="messageIco" src="../../context/call.png" width=25%></img>
+                            </a>
+							<a href="messageBernardo.html">
+                                <img id="messageIco" src="../../context/messagess.png" width=25%></img>
+                            </a>
+							<a onclick="setCookie('callName','Bernardo')" href="sendmsg.html">
+                                <img id="bernardoIco" src="../../context/45-Send-512.png" width=25%></img>
+                            </a>
+                        </td>
+                    </tr>
+					<tr>
+						<td onclick="window.location.href='miguel.html'">
+							<img style="vertical-align:middle" id="contact-photo" src="../../context/miguel.jpeg" width=25%></img>
+							&nbsp &nbsp &nbsp Miguel &nbsp
+						</td>
+						<td>
+                            <a onclick="setCookie('callName','Miguel')" href="call2.html">
+                                <img id="messageIco" src="../../context/call.png" width=25%></img>
+                            </a>
+							<a href="messageMiguel.html">
+                                <img id="messageIco" src="../../context/messagess.png" width=25%></img>
+                            </a>
+							<a onclick="setCookie('callName','Miguel')" href="sendmsg.html">
+                                <img id="bernardoIco" src="../../context/45-Send-512.png" width=25%></img>
+                            </a>
+                        </td>
+                    </tr>
+					<tr>
+						<td onclick="window.location.href='marta.html'">
+							<img style="vertical-align:middle" id="contact-photo" src="../../context/marta.jpeg" width=25%></img>
+							&nbsp &nbsp &nbsp Marta &nbsp
+						</td>
+						<td>
+                            <a onclick="setCookie('callName','Marta')" href="call3.html">
+                                <img id="messageIco" src="../../context/call.png" width=25%></img>
+                            </a>
+							<a href="messageMarta.html">
+                                <img id="messageIco" src="../../context/messagess.png" width=25%></img>
+                            </a>
+							<a onclick="setCookie('callName','Marta')" href="sendmsg.html">
+                                <img id="bernardoIco" src="../../context/45-Send-512.png" width=25%></img>
+                            </a>
+                        </td>
+                    </tr>
+					<tr>
+						<td onclick="window.location.href='marta.html'">
+							<img style="vertical-align:middle" id="contact-photo" src="../../context/Anonymous.jpeg" width=25%></img>
+							&nbsp &nbsp &nbsp Maria &nbsp
+						</td>
+						<td>
+                            <a onclick="setCookie('callName','Maria')" href="call.html">
+                                <img id="messageIco" src="../../context/call.png" width=25%></img>
+                            </a>
+							<a href="messageMarta.html">
+                                <img id="messageIco" src="../../context/messagess.png" width=25%></img>
+                            </a>
+							<a onclick="setCookie('callName','Maria')" href="sendmsg.html">
+                                <img id="bernardoIco" src="../../context/45-Send-512.png" width=25%></img>
+                            </a>
+                        </td>
+                    </tr>
+					<tr>
+						<td onclick="window.location.href='marta.html'">
+							<img style="vertical-align:middle" id="contact-photo" src="../../context/Anonymous.jpeg" width=25%></img>
+							&nbsp &nbsp &nbsp Joao &nbsp
+						</td>
+						<td>
+							<a onclick="setCookie('callName','Joao')" href="call.html">
+								<img id="messageIco" src="../../context/call.png" width=25%></img>
+							</a>
+							<a href="messageMarta.html">
+								<img id="messageIco" src="../../context/messagess.png" width=25%></img>
+							</a>
+							<a onclick="setCookie('callName','Joao')" href="sendmsg.html">
+								<img id="bernardoIco" src="../../context/45-Send-512.png" width=25%></img>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td onclick="window.location.href='marta.html'">
+							<img style="vertical-align:middle" id="contact-photo" src="../../context/Anonymous.jpeg" width=25%></img>
+							&nbsp &nbsp Daniel &nbsp
+						</td>
+						<td>
+							<a onclick="setCookie('callName','Daniel')" href="call.html">
+								<img id="messageIco" src="../../context/call.png" width=25%></img>
+							</a>
+							<a href="messageMarta.html">
+								<img id="messageIco" src="../../context/messagess.png" width=25%></img>
+							</a>
+							<a onclick="setCookie('callName','Daniel')" href="sendmsg.html">
+								<img id="bernardoIco" src="../../context/45-Send-512.png" width=25%></img>
+							</a>
+						</td>
+					</tr>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+    <button id="swipe_left" class="back_button" onclick="goBack()">Swipe Left</button>
+
+
+</body>
+
+</html>

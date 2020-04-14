@@ -1,0 +1,3 @@
+- chamada, qnd terminar sair do menu chamada imediatamente
+- qnd saio da video chamada, timer é diferente (timer em cookie)
+- nome do ecra videochamada com bug

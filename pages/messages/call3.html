@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+
+<head>
+    <title>IIPM</title>
+    <link rel="stylesheet" href="../../style.css">
+    <script src="../../sketch.js"></script>
+</head>
+
+<body style="font-family:calibri; text-align: center;" onload="time('time');getCookie('callName','calling')">
+
+    <h2>Segundo Protótipo Funcional - Completo</h2>
+
+    <div id="screen" class="screenSize">
+        <div id="messages" class="screenSize">
+            <a href="../mainmenu.html">
+                <input type="button" onclick="location.href='func_prot.html';" class="menu_button" />
+            </a>
+            <div class="mainMenuTime" style="background-color: rgb(0, 0, 0);">
+                <table class="headerTable">
+                    <td width="33%" id="tableTime">
+                        <span id="time"></span>
+                    </td>
+                    <td width="33%" id="tableName">
+                        <span id="calling"></span>
+                    </td>
+                    <td width="33%" id="tableBattery">
+                        <img id="battery" src="../../context/Battery.png" width=27%></img>
+                        <img id="signal" src="../../context/Signal.png" width=27%></img>
+                    </td>
+                </table>
+            </div>
+
+
+            <div class="callPage">
+                <table class="call">
+                    <tr>
+                        <a id="counter">
+                            <label id="minutes">00</label>:<label id="seconds">00</label>
+                        </a>
+                    </tr>
+                    <tr>
+                        <td width="33%">
+                            <img id="mute" onclick="changeImage('mute')" src="../../context/mute.png" width=33%></img>
+                        </td>
+                        <td width="33%">
+                            <img id="speaker" onclick="changeImage('speaker')" src="../../context/speaker.png" width=33%></img>
+                        </td>
+                        <td width="33%">
+							<a onclick="setCookie('timer',"counter")" href="videocall3.html">
+								<img id="videocall" src="../../context/videocall.png" width=33%></img>
+							</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="33%"></td>
+                        <td width="33%">
+                            <a onclick="document.getElementById('counter').innerHTML='Call Ended'">
+                                <img id="endcall" src="../../context/endcall.png" width=60%></img>
+                            </a>
+                        </td>
+                        <td width="33%"></td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+    <button id="swipe_left" class="back_button" onclick="goBack()">Swipe Left</button>
+
+</body>
+
+</html>

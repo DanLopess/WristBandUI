@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+
+<head>
+    <title>IIPM</title>
+    <link rel="stylesheet" href="../../style.css">
+    <script src="../../sketch.js"></script>
+</head>
+
+<body style="font-family:calibri; text-align: center;" onload="time('time');getCookie('callName','calling')">
+
+    <h2>Segundo Protótipo Funcional - Completo</h2>
+
+    <div id="screen" class="screenSize">
+        <div id="messages" class="screenSize">
+            <a href="../mainmenu.html">
+                <input type="button" onclick="location.href='func_prot.html';" class="menu_button" />
+            </a>
+            <div class="mainMenuTime" style="background-color: rgb(0, 0, 0);">
+                <table class="headerTable">
+                    <td width="33%" id="tableTime">
+                        <span id="time"></span>
+                    </td>
+                    <td width="33%" id="tableName">
+                        <span id="calling"></span>
+                    </td>
+                    <td width="33%" id="tableBattery">
+                        <img id="battery" src="../../context/Battery.png" width=27%></img>
+                        <img id="signal" src="../../context/Signal.png" width=27%></img>
+                    </td>
+                </table>
+            </div>
+
+
+            <div style="position: relative; top: 6%;">
+							<img src="../../context/tenor2.gif" alt="videocall" style="width:380px;height:140px;border-radius:15px;">
+							<tr>
+								<a onclick="goBack()" style="position: relative; ">
+									<img id="videocall" src="../../context/stopvideocall.png" width=11%></img>
+								</a>
+							</tr>
+							<tr>
+								<a onclick="goBack(),goBack()" style="position: relative; ">
+									<img id="endcall" src="../../context/endcall.png" width=11%></img>
+								</a>
+							</tr>
+            </div>
+
+        </div>
+
+    </div>
+    <button id="swipe_left" class="back_button" onclick="goBack()">Swipe Left</button>
+
+</body>
+
+</html>

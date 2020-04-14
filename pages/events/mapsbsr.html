@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+
+<head>
+    <title>IIPM</title>
+    <link rel="stylesheet" href="../../style.css">
+    <script src="../../sketch.js"></script>
+    <style>
+        #map {
+            position: relative;
+            border-radius: 10px;
+            top: 7%;
+            height: 185px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body style="font-family:calibri; text-align: center;" onload="time('time');getCookie('callName','mapName')">
+
+    <h2>Segundo Protótipo Funcional - Completo</h2>
+
+    <div id="screen" class="screenSize">
+        <div id="messages" class="screenSize">
+            <a href="../mainmenu.html">
+                <input type="button" onclick="location.href='func_prot.html';" class="menu_button" />
+            </a>
+            <div class="mainMenuTime" style="background-color: rgb(167, 28, 28);">
+                <table class="headerTable">
+                    <td width="33%" id="tableTime">
+                        <span id="time"></span>
+                    </td>
+                    <td width="33%" id="tableName">
+                        <span id="mapName"></span>
+                    </td>
+                    <td width="33%" id="tableBattery">
+                        <img id="battery" src="../../context/Battery.png" width=27%></img>
+                        <img id="signal" src="../../context/Signal.png" width=27%></img>
+                    </td>
+                </table>
+            </div>
+
+
+            <div id="map">
+							<img id="mapa" src="../../context/sbsr.png" width=90%></img>
+						</div>
+
+        </div>
+
+    </div>
+    <button id="swipe_left" class="back_button" onclick="goBack()">Swipe Left</button>
+
+</body>
+
+</html>

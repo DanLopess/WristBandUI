@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+
+<head>
+    <title>IIPM</title>
+    <link rel="stylesheet" href="../../style.css">
+    <script src="../../sketch.js"></script>
+</head>
+
+<body style="font-family:calibri; text-align: center;" onload="time('time')" >
+    <h2>Segundo Protótipo Funcional - Completo</h2>
+
+    <div id="screen" class="screenSize">
+    <div id="messages" class="screenSize">
+       <a href="../mainmenu.html">
+		   <input type="button" onclick="location.href='mainmenu.html';" class="menu_button"/>
+        </a>
+        <div class="mainMenuTime" style="background-color: rgb(0, 171, 250);">
+            <table class="headerTable">
+                <td width="33%" id="tableTime">
+                    <span id="time"></span>
+                </td>
+                <td width="33%" id="tableName">
+                    Messages
+                </td>
+                <td width="33%" id="tableBattery">
+                    <img id="battery" src="../../context/Battery.png" width=27%></img>
+                    <img id="signal" src="../../context/Signal.png" width=27%></img>
+                </td>
+            </table>
+        </div>
+
+        <div class="contacts" style="overflow-y:scroll;">
+            <table class="messages">
+                <tr>
+                    <td>
+                        <img id="contact-photo" src="../../context/bernardo.jpeg" width=100%></img>
+                    </td>
+                    <td>
+                        <a href="messageBernardo.html">
+                            Bernardo
+                        </a>
+                    </td>
+                    <td style="color: grey">
+                        Hello...
+                    </td>
+                    <td>
+                        11:55
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <img id="contact-photo" src="../../context/miguel.jpeg" width=100%></img>
+                    </td>
+                    <td>
+                        <a href="messageMiguel.html">
+                            Miguel
+                        </a>
+                    </td>
+                    <td style="color: grey">
+                        Ok, ...
+                    </td>
+                    <td>
+                        11:55
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <img id="contact-photo" src="../../context/marta.jpeg" width=100%></img>
+                    </td>
+                    <td>
+                        <a href="messageMarta.html">
+                            Marta
+                        </a>
+                    </td>
+                    <td style="color: grey">
+                        Great!
+                    </td>
+                    <td>
+                        08:55
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img id="contact-photo" src="../../context/Anonymous.jpeg" width=100%></img>
+                    </td>
+                    <td>
+                        Maria
+                    </td>
+                    <td style="color: grey">
+                        Yes,but...
+                    </td>
+
+                    <td>
+                        Yesterday
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img id="contact-photo" src="../../context/Anonymous.jpeg" width=100%></img>
+                    </td>
+                    <td>
+                        João
+                    </td>
+                    <td style="color: grey">
+                        Ok.
+                    </td>
+
+                    <td>
+                        Yesterday
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img id="contact-photo" src="../../context/Anonymous.jpeg" width=100%></img>
+                    </td>
+                    <td>
+                        Daniel
+                    <td style="color: grey">
+                        Cool.
+                    </td>
+                    </td>
+
+                    <td>
+                        Yesterday
+                    </td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    </div>
+    <button id="swipe_left" class="back_button" onclick="goBack()">Swipe Left</button>
+
+
+</body>
+
+</html>
